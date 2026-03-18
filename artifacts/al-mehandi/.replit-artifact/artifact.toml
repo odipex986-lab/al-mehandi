@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Al Mehandi"
+version = "1.0.0"
+id = "artifacts/al-mehandi"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+localPort = 24218
+name = "web"
+paths = ["/"]
+
+[services.development]
+run = "pnpm --filter @workspace/al-mehandi run dev"
+
+[services.env]
+PORT = "24218"
+BASE_PATH = "/"
+
+[services.production]
+build = ["pnpm", "--filter", "@workspace/al-mehandi", "run", "build"]
+publicDir = "artifacts/al-mehandi/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"

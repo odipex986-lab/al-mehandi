@@ -1,0 +1,22 @@
+packages:
+  "framer-motion": "For page transitions and interactive element animations"
+  "react-hook-form": "For robust form state management"
+  "@hookform/resolvers": "For Zod schema validation integration"
+  "clsx": "Utility for constructing className strings conditionally"
+  "tailwind-merge": "Utility to merge tailwind classes without style conflicts"
+  "date-fns": "For formatting order creation dates in admin dashboard"
+
+images:
+  - path: "artifacts/al-mehandi/public/images/mehndi-bg.png"
+    description: "Subtle elegant background pattern of traditional Indian mehndi and mandala designs in very light beige and gold, seamless tileable style, low opacity, minimalist"
+    aspect_ratio: "16:9"
+  - path: "artifacts/al-mehandi/public/images/hero-henna.png"
+    description: "Beautiful detailed henna art on hands, elegant styling with gold accents, warm lighting, professional photography, luxury aesthetic"
+    aspect_ratio: "16:9"
+  - path: "artifacts/al-mehandi/public/images/logo.png"
+    description: "Minimalist luxury logo for 'Al Mehandi' with traditional Islamic geometric motifs, gold color on transparent background"
+    aspect_ratio: "1:1"
+
+notes:
+  - Using generated hooks from @workspace/api-client-react
+  - Assumes Shadcn UI components are pre-installed in src/components/ui/
